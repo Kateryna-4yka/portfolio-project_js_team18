@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "portfolio-project_js_team18",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/portfolio-project_js_team18/",
     "preview": "vite preview"
   },
   "devDependencies": {
