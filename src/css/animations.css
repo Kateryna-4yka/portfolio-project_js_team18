@@ -16,3 +16,13 @@
     transform: translateX(-50%) translateY(100%) scale(1);
   }
 }
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+  
+  to {
+    transform: translateX(-180%);
+  }
+}
