@@ -2,14 +2,17 @@
 .covers-container {
   padding: 0;
   max-width: 375px;
-  backdrop-filter: blur(100px);
-  background: linear-gradient(90deg, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%);
+  background: url(/img/covers/elements_vectors.png);
+  background-position: center;
+  background-size: cover;
   padding-left: 0;
   padding-right: 0;
   height: 508px;
+  overflow: hidden;
 }
 .covers-content-container {
   position: relative;
+  
 }
 .covers-content {
   position: absolute;
@@ -33,7 +36,7 @@
   justify-content: center;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -47,7 +50,7 @@
   max-width: 768px;
 }
 .covers-content {
-  right: -1100px;
+  right: -1600px;
 }
 .covers-content-project-img {
   width: 544px;
@@ -55,7 +58,7 @@
 }
 .covers-content-project {
   max-height: 960px;
-  gap: 35px;
+  gap: 40px;
 }
 }
 /*-------------- /Covers tablet ----------------- */
@@ -68,7 +71,6 @@
 .covers-content {
   right: -1440px;
 }
-
 }
 /*-------------- Covers /desktop ----------------- */
 
