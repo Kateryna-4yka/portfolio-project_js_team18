@@ -15,6 +15,10 @@ body {
   font-family: 'Inter Tight', sans-serif;
   color: #fafafa;
   background: #1c1d20;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  font-weight: 500;
 }
 /* Styles for Mobile devices */
 .section {
