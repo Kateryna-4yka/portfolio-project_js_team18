@@ -1,0 +1,229 @@
+.about-me-text {
+    padding: 32px 32px 272px 32px;
+    background-color: #242527;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    border-radius: 24px;
+    margin-bottom: 16px;
+}
+
+.about-me-accent-red {
+    color: #ed3b44;
+}
+
+.about-me-accent-grey {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.about-me-img img {
+    border-radius: 24px;
+    margin-bottom: 32px;
+}
+
+.about-me-item {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.about-me-titel {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.about-me-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(250, 250, 250, 0.2);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    top: 100%;
+}
+
+.about-me-item.open::after {
+    bottom: calc(100% + 20px);
+}
+
+.about-me-list-text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.about-me-list-text.about-me-mg {
+    margin-bottom: 32px;
+}
+
+.icon-arrow {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 9px;
+    width: 36px;
+    height: 36px;
+}
+
+.about-me-icon {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.about-me-list-skils {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.about-me-item-skils {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    width: 130px;
+    height: 130px;
+}
+
+.about-me-skils-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    /* Ограничение ширины */
+    margin: 0 auto;
+    /* Центрирование */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-shrink: 0;
+    /* Отключаем сжатие */
+}
+
+.swiper-slide {
+    flex: 0 0 auto;
+    /* Отключаем сжатие */
+    width: 130px;
+    /* Фиксированная ширина для мобильных */
+    height: 130px;
+    /* Фиксированная высота для мобильных */
+    transition: transform 0.3s ease;
+}
+
+.about-me-skils-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    transform: rotate(180deg);
+    stroke: #3b3b3b;
+    fill: none;
+}
+
+.about-me-item-skils.active {
+    background-color: #ed3b44;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-me-text {
+        padding: 64px 64px 436px 64px;
+        font-size: 38px;
+        line-height: 1.05;
+        color: #fafafa;
+    }
+
+    .about-me-img img {
+        margin-bottom: 64px;
+    }
+
+    .about-me-item {
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
+
+    .about-me-list-text.about-me-mg {
+        margin-bottom: 16px;
+    }
+
+    .about-me-titel {
+        padding-bottom: 16px;
+    }
+
+    .about-me-list-text:nth-child(1) {
+        margin-top: 8px;
+    }
+
+    .icon-arrow {
+        border: 1px solid rgba(250, 250, 250, 0.2);
+        border-radius: 100px;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper-slide {
+        width: 200px;
+        /* Фиксированная ширина для планшетов */
+        height: 200px;
+        /* Фиксированная высота для планшетов */
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-me-flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 96px;
+    }
+
+    .about-me-img img {
+        max-width: none;
+        margin-bottom: 0;
+    }
+
+    .about-me-text {
+        margin-bottom: 0;
+    }
+
+    .about-me-flex-div {
+        margin-left: auto;
+        max-width: 612px;
+        max-height: 320px;
+    }
+
+    .about-me-list-text.about-me-mg {
+        margin-bottom: 32px;
+    }
+
+    .about-me-text-wrap {
+        max-width: 465px;
+    }
+
+    .about-me-text-wrap-first {
+        max-width: 369px;
+    }
+
+    .about-me-skils-slider {
+        margin-top: 96px;
+        padding-left: 32px;
+    }
+}
