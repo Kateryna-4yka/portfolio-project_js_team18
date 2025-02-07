@@ -1,8 +1,10 @@
 /*-------------- Covers section ----------------- */
 .covers-container {
-  padding: 0;
+  min-width: 320px;
   max-width: 375px;
-  background: url(/img/covers/elements_vectors.png);
+  margin: 0 auto;
+  padding: 0;
+  background: url('/img/covers/background-cover@1x.png');
   background-position: center;
   background-size: cover;
   padding-left: 0;
@@ -41,7 +43,11 @@
   animation-iteration-count: infinite;
 }
 
-
+@media screen and (max-width: 320px) and (min-resolution: 192dpi) {
+.covers-container {
+    background: url('/img/covers/background-cover@2x.png');
+}
+}
 /*-------------- Covers tablet ----------------- */
 
 @media only screen and (min-width: 768px) {
