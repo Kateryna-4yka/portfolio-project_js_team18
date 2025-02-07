@@ -1,0 +1,137 @@
+.hero-container {
+  width: 100%;
+  margin-top: 0px;
+  padding-bottom: 32px;
+  background-image: url('../img/hero/hero-mobile@1x.png');
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0;
+}
+.hero-content {
+  max-width: 343px;
+  padding-top: 281px;
+  padding-bottom: 212px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.hero-title {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+.hero-social-links-container {
+  display: flex;
+  justify-content: center;
+}
+.hero-social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: space-between;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+.hero-social-link {
+  display: flex;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+.hero-social-link:hover {
+  border-color: #fafafa;
+}
+.fb-link {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.yt-link {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.gh-link {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url('../img/hero/hero-mobile@2x.png');
+  }
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .hero-container {
+    background-image: url('../img/hero/hero-tablet@1x.png');
+  }
+  .hero-content {
+    max-width: 632px;
+    padding-top: 300px;
+    padding-bottom: 187px;
+  }
+  .hero-title {
+    font-size: 90px;
+    letter-spacing: -2.7px;
+  }
+  .hero-social-links-container {
+    /* width: 473px; */
+    justify-content: end;
+  }
+  .hero-social-links {
+    gap: 8px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  .hero-social-link {
+    padding: 18px 24px;
+  }
+  .ig-link {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .fb-link {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .yt-link {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .gh-link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url('../img/hero/hero-tablet@2x.png');
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .hero-container {
+    background-image: url('../img/hero/hero-desktop@1x.png');
+  }
+  .hero-content {
+    max-width: 1084px;
+    padding-bottom: 243px;
+  }
+}
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url('../img/hero/hero-desktop@2x.png');
+  }
+}
