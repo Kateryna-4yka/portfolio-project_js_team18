@@ -1,0 +1,83 @@
+/*-------------- Covers section ----------------- */
+.covers-container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0;
+  background: url('/img/covers/background-cover@1x.png');
+  background-position: center;
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+  height: 508px;
+  overflow: hidden;
+}
+.covers-content-container {
+  position: relative;
+  
+}
+.covers-content {
+  position: absolute;
+  right: -860px;
+  left: 0;
+  overflow: hidden;
+}
+.covers-content-project {
+  max-height: 508px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  transform: rotate(16deg);
+}
+.covers-content-project-img {
+  width: 282px;
+  height: 162px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  /* animation-name: marqueeLine;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
+}
+
+@media screen and (max-width: 320px) and (min-resolution: 192dpi) {
+.covers-container {
+    background: url('/img/covers/background-cover@2x.png');
+}
+}
+/*-------------- Covers tablet ----------------- */
+
+@media only screen and (min-width: 768px) {
+.covers-container {
+  height: 960px;
+  max-width: 768px;
+}
+.covers-content {
+  right: -1600px;
+}
+.covers-content-project-img {
+  width: 544px;
+  height: 314px;
+}
+.covers-content-project {
+  max-height: 960px;
+  gap: 40px;
+}
+}
+/*-------------- /Covers tablet ----------------- */
+
+/*-------------- Covers desktop ----------------- */
+@media only screen and (min-width: 1440px) {
+  .covers-container {
+  max-width: 1440px;
+}
+.covers-content {
+  right: -1440px;
+}
+}
+/*-------------- Covers /desktop ----------------- */
+
+/*-------------- Covers section ----------------- */
