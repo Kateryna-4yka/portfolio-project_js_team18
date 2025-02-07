@@ -37,10 +37,10 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  animation-name: marqueeLine;
+  /* animation-name: marqueeLine;
   animation-duration: 10s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 
 @media screen and (max-width: 320px) and (min-resolution: 192dpi) {
