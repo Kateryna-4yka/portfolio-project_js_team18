@@ -81,6 +81,11 @@
   color: #ed3b44;
 }
 .header-modal-order-btn {
+  width: 164px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   position: fixed;
   bottom: 64px;
@@ -127,6 +132,11 @@
     gap: 5px;
   }
   .header-order-btn {
+    width: 163px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     padding: 18px 24px;
     background: #ed3b44;
