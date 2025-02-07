@@ -23,8 +23,6 @@
   display: none;
 }
 .burger-icon-btn {
-  width: 28px;
-  height: 28px;
   margin: 0;
   padding: 0;
   border: none;
@@ -50,8 +48,6 @@
   z-index: 1000;
 }
 .header-modal-close-btn {
-  width: 28px;
-  height: 28px;
   padding: 0;
   position: absolute;
   top: 32px;
@@ -100,6 +96,7 @@
 .header-modal-order-btn:hover {
   background-color: #e0373f;
 }
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .header-nav-container,
@@ -113,10 +110,8 @@
     align-items: center;
   }
   .header-nav-menu {
-    display: block;
     cursor: pointer;
-    margin-bottom: 8px;
-    padding: 10px;
+    margin-bottom: 18px;
     text-decoration: underline;
     letter-spacing: -0.32px;
     text-underline-offset: auto;
@@ -144,7 +139,4 @@
   .burger-icon-btn {
     display: none;
   }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1440px) {
 }
