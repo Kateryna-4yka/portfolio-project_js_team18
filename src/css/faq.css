@@ -68,9 +68,21 @@
 .faq-div-icon {
     display: flex;
     justify-content: space-between;
+    transition: margin-bottom 0.5s ease-in-out;
 }
 
-.rotate {
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.faq-list.active .faq-div-icon {
+    margin-bottom: 16px;
+}
+
+.faq-list.active .faq-list-icon {
     transform: rotate(180deg);
 }
 
