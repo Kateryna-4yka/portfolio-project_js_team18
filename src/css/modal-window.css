@@ -1,0 +1,61 @@
+/* Footer modal styles */
+.success-modal {
+  width: 343px;
+  height: 276px;
+  border-radius: 20px;
+  border: 1px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(28, 29, 32, 1);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+}
+.modal-backdrop-title {
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(250, 250, 250, 1);
+}
+.footer-modal-backdrop-info {
+  width: 279px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.footer-modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  fill: rgba(250, 250, 250, 1);
+}
+@media screen and (min-width: 768px) {
+  .success-modal {
+    width: 492px;
+    height: 246px;
+  }
+  .footer-modal-backdrop-info {
+    width: 365px;
+  }
+}
