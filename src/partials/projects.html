@@ -1,43 +1,99 @@
 <section id="projects" class="section">
   <div class="container">
     <h2>Projects</h2>
-    <div class="projects__card">
-      <div class="projects__info-container">
-        <ul class="projects__list-tools">
-          <li>#react</li>
-          <li>#js</li>
-          <li>#node js</li>
-          <li>#git</li>
-        </ul>
-        <p class="projects__title">
-          Programming Across Borders: Ideas, Technologies, Innovations
-        </p>
-        <p class="projects__btn">See project</p>
-      </div>
-      <div class="projects__demo-container">
-        <img
-          src="/img/projects/book@1x.png"
-          srcset="
-            ../img/projects/book@1x.png 1x,
-            ../img/projects/book@2x.png 2x
-          "
-          alt="Book Cover"
-          width="614"
-          height="385"
-        />
-      </div>
+    <div class="swiper mySwiper">
+      <ul class="swiper-wrapper">
+        <li class="projects__card swiper-slide">
+          <div class="projects__info-container">
+            <ul class="projects__list-tools">
+              <li>#react</li>
+              <li>#js</li>
+              <li>#node js</li>
+              <li>#git</li>
+            </ul>
+            <p class="projects__title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <p class="projects__btn">See project</p>
+          </div>
+          <div class="projects__demo-container">
+            <img
+              src="/img/projects/book@1x.png"
+              srcset="
+                /img/projects/book@1x.png 1x,
+                /img/projects/book@2x.png 2x
+              "
+              alt="Read Journey"
+              width="614"
+              height="385"
+            />
+          </div>
+        </li>
+        <li class="projects__card swiper-slide">
+          <div class="projects__info-container">
+            <ul class="projects__list-tools">
+              <li>#react</li>
+              <li>#js</li>
+              <li>#node js</li>
+              <li>#git</li>
+            </ul>
+            <p class="projects__title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <p class="projects__btn">See project</p>
+          </div>
+          <div class="projects__demo-container">
+            <img
+              src="/img/projects/pet@1x.png"
+              srcset="/img/projects/pet@1x.png 1x, /img/projects/pet@2x.png 2x"
+              alt="Pet Love"
+              width="614"
+              height="385"
+            />
+          </div>
+        </li>
+        <li class="projects__card swiper-slide">
+          <div class="projects__info-container">
+            <ul class="projects__list-tools">
+              <li>#react</li>
+              <li>#js</li>
+              <li>#node js</li>
+              <li>#git</li>
+            </ul>
+            <p class="projects__title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <p class="projects__btn">See project</p>
+          </div>
+          <div class="projects__demo-container">
+            <img
+              src="/img/projects/people@1x.png"
+              srcset="
+                /img/projects/people@1x.png 1x,
+                /img/projects/people@2x.png 2x
+              "
+              alt="VocabBuilder"
+              width="614"
+              height="385"
+            />
+          </div>
+        </li>
+      </ul>
     </div>
+
     <ul class="projects__nav">
-      <li>
+      <li class="swiper-button-prev">
         <svg class="projects__arrow projects__arrow-right">
-          <use href="../img/sprite.svg#projects__arrow"></use>
+          <use href="/img/sprite.svg#projects__arrow"></use>
         </svg>
       </li>
-      <li>
+      <li class="swiper-button-next">
         <svg class="projects__arrow">
-          <use href="../img/sprite.svg#projects__arrow"></use>
+          <use href="/img/sprite.svg#projects__arrow"></use>
         </svg>
       </li>
     </ul>
   </div>
 </section>
+
+<script type="module" src="/main.js"></script>
