@@ -9,31 +9,19 @@
         that reflect each client's unique personality.
       </p>
       <picture class="about-me-img">
-        <source
-          srcset="
+        <source srcset="
             /img/about-me/man-desktop@1x.png 1x,
             /img/about-me/man-desktop@2x.png 2x
-          "
-          media="(min-width: 1158px)"
-        />
-        <source
-          srcset="
+          " media="(min-width: 1158px)" />
+        <source srcset="
             /img/about-me/man-tablet@1x.png 1x,
             /img/about-me/man-tablet@2x.png 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
+          " media="(min-width: 768px)" />
+        <source srcset="
             /img/about-me/man-mobile@1x.png 1x,
             /img/about-me/man-mobile@2x.png 2x
-          "
-          media="(max-width: 767px)"
-        />
-        <img
-          src="/img/about-me/man-mobile@1x.png"
-          alt="Lloyd Jefferson photo"
-        />
+          " media="(max-width: 767px)" />
+        <img src="/img/about-me/man-mobile@1x.png" alt="Lloyd Jefferson photo" />
       </picture>
     </div>
     <ul class="about-me-accordion">
@@ -102,5 +90,23 @@
         </div>
       </li>
     </ul>
+    <div class="about-me-swiper-container">
+      <div class="swiper">
+        <ul class="swiper-wrapper about-me-list-skils">
+          <li class="swiper-slide about-me-item-skils active">HTML/CSS</li>
+          <li class="swiper-slide about-me-item-skils">JavaScript</li>
+          <li class="swiper-slide about-me-item-skils">React</li>
+          <li class="swiper-slide about-me-item-skils">Node.js</li>
+          <li class="swiper-slide about-me-item-skils">React Native</li>
+          <li class="swiper-slide about-me-item-skils">Soft skills</li>
+          <li class="swiper-slide about-me-item-skils">Python</li>
+          <li class="swiper-slide about-me-item-skils">Vue.js</li>
+        </ul>
+
+        <svg class="swiper-button-next" width="28" height="28">
+          <use href="/img/sprite.svg#icon-left-arrow"></use>
+        </svg>
+      </div>
+    </div>
   </div>
 </section>
