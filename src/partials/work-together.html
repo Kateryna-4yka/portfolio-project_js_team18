@@ -1,11 +1,10 @@
-<footer  id="work-together">
+<footer class="section footer-section" id="work-together">
   <div class="container work-together-container">
-    <div class="work-together-section-info">
       <div class="work-together-logo">
         <a class="logo-work-together-link" href="./index.html">
           <img
             class="work-together-img"
-            srcset="/img/work-together/footer-man@2x.png 2x"
+            srcset="/img/work-together/footer-man@1x.png 1x, /img/work-together/footer-man@2x.png 2x"
             src="/img/work-together/footer-man@1x.png"
             alt="footer image"
             width="44"
@@ -13,37 +12,34 @@
           />
         </a>
         <h2 class="work-together-title">
-          Let’s <span class="work-together-title-span">work</span>
+          Let's <span class="work-together-title-span">work</span>
         </h2>
         <h2 class="work-together-title together">together</h2>
       </div>
-      <div class="work-together-form">
         <form class="work-together-form-for-users">
-          <label
-            class="work-together-form-label"
-            for="user-email-work-together"
-          >
+          <div class="work-together-form-container">
             <input
-              class="work-together-email-input"
+              class="work-together-input email-input"
               id="user-email-work-together"
               name="user-email"
               type="email"
               pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
               placeholder="clients@gmail.com"
             />
+            <span class="success-message">Succes!</span>
+            <span class="error-message">Invalid email, try again</span>
           </label>
           <input
-            class="work-together-comment"
+            class="work-together-input comment-input"
             id="work-together-user-comment"
             name="work-together-user-comment"
             placeholder="comments"
           ></input>
+          </div>
           <button class="work-together-form-user-btn" type="submit">
             Send
           </button>
         </form>
-      </div>
-      <div class="work-together-address">
         <address class="work-together-contacts">
           <ul class="work-together-contacts-list">
             <li class="work-together-contacts-item work-together-email">
@@ -60,7 +56,5 @@
             </li>
           </ul>
         </address>
-      </div>
-    </div>
   </div>
 </footer>
