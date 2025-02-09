@@ -1,3 +1,13 @@
+
+@import 'accordion-js/dist/accordion.min.css';
+
+.faq-content {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    overflow: hidden;
+}
+
 .faq-title {
     font-weight: 600;
     font-size: 16px;
@@ -71,10 +81,7 @@
     transition: margin-bottom 0.5s ease-in-out;
 }
 
-.faq-content {
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
+
 
 .faq-list.active .faq-div-icon {
     margin-bottom: 16px;
