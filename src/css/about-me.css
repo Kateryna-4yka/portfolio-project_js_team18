@@ -106,8 +106,16 @@
   justify-content: center;
   border-radius: 100%;
   border: 1px solid rgba(250, 250, 250, 0.2);
+  /* swiper-slide style */
+  flex: 0 0 auto;
+  position: static;
+  display: flex;
+  flex-shrink: 0;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
 }
-.swiper-button-next {
+.about-me-swiper-btn-nxt {
   position: absolute;
   right: 0;
   transform: translateY(-50%);
@@ -118,7 +126,7 @@
   fill: none;
 }
 /* Контейнер слайдера от Swiper */
-.swiper {
+.about-me-swiper {
   width: 260px;
   height: 100%;
   position: static;
@@ -126,15 +134,7 @@
   flex-shrink: 0;
   box-sizing: border-box;
 }
-.swiper-slide {
-  flex: 0 0 auto;
-  position: static;
-  display: flex;
-  flex-shrink: 0;
-  overflow: hidden;
-  width: 130px;
-  height: 130px;
-}
+
 .about-me-item-skils.active {
   background-color: #ed3b44;
 }
@@ -172,7 +172,18 @@
     margin-bottom: 8px;
   }
 
-  .swiper-button-next {
+  /* Контейнер слайдера */
+  .about-me-swiper-container {
+    padding-right: 104px;
+  }
+  .about-me-swiper {
+    width: 600px;
+  }
+  .about-me-item-skils {
+    width: 200px;
+    height: 200px;
+  }
+  .about-me-swiper-btn-nxt {
     position: absolute;
     right: 0;
     transform: translateY(-50%);
@@ -181,17 +192,6 @@
     transform: rotate(180deg);
     stroke: #3b3b3b;
     fill: none;
-  }
-  /* Контейнер слайдера */
-  .about-me-swiper-container {
-    padding-right: 104px;
-  }
-  .swiper {
-    width: 600px;
-  }
-  .swiper-slide {
-    width: 200px;
-    height: 200px;
   }
 }
 
@@ -227,15 +227,15 @@
   .about-me-item:last-child {
     margin-bottom: 96px;
   }
-
+  /* Контейнер слайдера */
   .about-me-swiper-container {
     padding-right: 144px;
     margin-left: 32px;
   }
-  .swiper {
+  .about-me-swiper {
     width: 1200px;
   }
-  .swiper-button-next {
+  .about-me-swiper-btn-nxt {
     right: 64px;
   }
 }
