@@ -35,7 +35,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url('../img/hero/hero-desktop@1x.png');
+  background-image: url('/img/hero/hero-desktop@1x.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -101,9 +101,17 @@
 .header-modal-order-btn:hover {
   background-color: #e0373f;
 }
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+  .header-modal {
+    background-image: url('/img/hero/hero-desktop@2x.png');
+  }
+}
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+    .header-modal {
+    background-image: none;
+  }
   .header-nav-container,
   .header-order-btn {
     display: block;

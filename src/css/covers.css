@@ -43,7 +43,7 @@
   animation-iteration-count: infinite; */
 }
 
-@media screen and (max-width: 320px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
 .covers-container {
     background: url('/img/covers/background-cover@2x.png');
 }
