@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.about-me-swiper', {
   loop: true,
   slidesPerView: 2,
   modules: [Navigation, Mousewheel, Keyboard],
