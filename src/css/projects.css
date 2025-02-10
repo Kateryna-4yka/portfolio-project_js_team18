@@ -5,9 +5,10 @@
 }
 .projects-swiper {
   margin-bottom: 84px;
+  border-radius: 24px;;
 }
 .projects-container .swiper {
-    width: 343px;
+    width: 344px;
 }
 .projects-title {
   font-weight: 600;
@@ -86,7 +87,7 @@ white-space: nowrap;
 }
 
 .projects_demo-container {
-  width: 343px;
+  width: 344px;
   height: 395px;
   object-fit: cover;
   background: #242527;

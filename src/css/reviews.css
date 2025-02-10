@@ -1,6 +1,6 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
-.swiper-button-disabled {
+.reviews-swiper-container .swiper-button-disabled {
     display: block;
 }
 .reviews-title {
@@ -77,6 +77,23 @@ gap: 12px;
     stroke: #3B3B3B;
     stroke-width: 2px;
 }
+
+.reviews-list-text::-webkit-scrollbar {
+    width: 6px;
+    /* Ширина вертикального скроллбара */
+  }
+  .reviews-list-text::-webkit-scrollbar-track {
+    background:  #3B3B3B; /* Цвет фона полосы прокрутки */
+    border-radius: 10px; /* Радиус для скругления углов */
+  }
+  /* Стилизация самой ручки (ползунка) прокрутки */
+  .reviews-list-text::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+     /* Скругляем ручку */
+  }
+
+
 .reviews-catalog {
 width: 344px;
 }
@@ -91,6 +108,17 @@ width: 344px;
 .icon {
     gap: 20px;}
    }
+
+
+.icon-left-arrow,
+.icon-right-arrow {
+
+       padding: 18px;
+       width: 68px;
+       height: 68px;
+
+   }
+
    @media screen and (min-width: 1440px) {
    .reviews-list {
     width: 332px;
