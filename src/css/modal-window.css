@@ -1,4 +1,9 @@
 /* Footer modal styles */
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 .modal-work-together {
   background: rgba(15, 15, 16, 0.6);
   width: 100%;
