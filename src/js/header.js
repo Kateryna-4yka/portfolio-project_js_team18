@@ -23,19 +23,26 @@ const showHeaderModalWindow = function () {
       throw new Error('the menu modal window has not been found');
     headerModalWindow.classList.remove('visually-hidden');
     setTimeout(
-      () => headerModalWindow.classList.add('header-modal-active'),
+      () => {
+        headerModalWindow.classList.add('header-modal-active');
+        document.body.classList.add('no-scroll'); // Додаємо клас для блокування прокручування
+      },
       10
     );
   } catch (error) {
     console.log(error.message);
   }
 };
+
 const closeHeaderModalWindow = function () {
   try {
     if (!headerModalWindow)
       throw new Error('the menu modal window has not been found');
     headerModalWindow.classList.remove('header-modal-active');
-    setTimeout(() => headerModalWindow.classList.add('visually-hidden'), 10);
+    setTimeout(() => {
+      headerModalWindow.classList.add('visually-hidden');
+      document.body.classList.remove('no-scroll'); // Видаляємо клас для відновлення прокручування
+    }, 10);
   } catch (error) {
     console.log(error.message);
   }
