@@ -132,10 +132,10 @@ function observeCards() {
       if (isCard1Visible) {
         prevButton.classList.add('disable');
         prevButton.style.stroke = '#3B3B3B'; // Додаємо stroke для prevButton
-        prevButton.style.border = '1px solid rgba(250, 250, 250, 0.062)'; // Додаємо border для prevButton
+        prevButton.style.border = '1px solid rgba(250, 250, 250, 0.2)'; // Додаємо border для prevButton
       } else {
         prevButton.classList.remove('disable');
-        prevButton.style.stroke = ''; // Видаляємо stroke
+        prevButton.style.stroke = '#FAFAFA'; // Видаляємо stroke
         prevButton.style.border = ''; // Видаляємо border
       }
   
@@ -143,10 +143,10 @@ function observeCards() {
       if (isCard6Visible) {
         nextButton.classList.add('disable');
         nextButton.style.stroke = '#3B3B3B'; // Додаємо stroke для nextButton
-        nextButton.style.border = '1px solid rgba(250, 250, 250, 0.062)'; // Додаємо border для nextButton
+        nextButton.style.border = '1px solid rgba(250, 250, 250, 0.2)'; // Додаємо border для nextButton
       } else {
         nextButton.classList.remove('disable');
-        nextButton.style.stroke = ''; // Видаляємо stroke
+        nextButton.style.stroke = '#FAFAFA'; // Видаляємо stroke
         nextButton.style.border = ''; // Видаляємо border
       }
   
