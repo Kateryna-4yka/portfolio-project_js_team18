@@ -11,6 +11,13 @@
   overflow: hidden;
 }
 
+@font-face {
+  font-family: 'Inter Tight';
+  src: url(/css/fonts/InterTight-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
   color: #fafafa;
