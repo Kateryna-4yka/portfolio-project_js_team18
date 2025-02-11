@@ -4,13 +4,18 @@ const formEl = document.querySelector('.work-together-form-for-users');
 const modalEl = document.querySelector('.success-modal');
 const backdropEl = document.querySelector('.modal-work-together');
 const closeModalBtn = document.querySelector('.footer-modal-close-btn');
+const body = document.querySelector('body');
+
 
 const closeModal = e => {
   if (closeModalBtn.contains(e.target) || backdropEl.contains(e.target)) {
     modalEl.classList.remove('is-open');
     backdropEl.classList.remove('is-open');
+    body.classList.remove('no-scroll');
+    
     window.removeEventListener('click', closeModal);
     window.removeEventListener('keydown', closeModalByEsc);
+    
   }
 };
 
@@ -18,6 +23,7 @@ const closeModalByEsc = e => {
   if (e.code === 'Escape') {
     modalEl.classList.remove('is-open');
     backdropEl.classList.remove('is-open');
+    body.classList.remove('no-scroll');
     window.removeEventListener('keydown', closeModalByEsc);
   }
 };
@@ -58,6 +64,7 @@ formEl.addEventListener('submit', async event => {
 
     modalEl.classList.add('is-open');
     backdropEl.classList.add('is-open');
+    body.classList.add('no-scroll');
 
     window.addEventListener('click', closeModal);
     window.addEventListener('keydown', closeModalByEsc);
