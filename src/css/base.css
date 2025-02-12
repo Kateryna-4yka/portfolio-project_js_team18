@@ -21,28 +21,126 @@
 body {
   font-family: 'Inter Tight', sans-serif;
   color: #fafafa;
+  background-color: #1c1d20;
   background: #1c1d20;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   font-weight: 500;
 }
+
 /* Styles for Mobile devices */
 .section {
   padding-bottom: 32px;
   padding-top: 32px;
 }
+
+body.light-theme {
+  color: #1c1d20;
+  background: #fafafa;
+  background-color: #fafafa;
+
+  /* Background Images */
+  .hero-container {
+    background-image: url('/img/hero/hero-mobile-light@1x.png');
+  }
+
+  .header-modal {
+    background-image: url('/img/hero/hero-desktop-light@1x.png');
+  }
+
+  .footer-section {
+    background-image: none;
+  }
+
+  /* Element styling */
+  .about-me-text, 
+  .about-me-item::after,
+  .benefits-list,
+  .projects_info-container,
+  .faq-list:first-child::before,
+  .success-modal {
+    background-color: #D24C53;
+  }
+
+  .projects_demo-container,
+  .icon-arrow,
+  .faq-list-icon,
+  .icon-left-arrow,
+  .icon-right-arrow,
+  .projects-arrow-item-prev,
+  .projects-arrow-item-next {
+    background: #F2D0D1;
+  }
+
+  .about-me-accent-red,
+  .projects_list-tools-item,
+  .projects_title {
+    color: #fafafa;
+  }
+
+  .about-me-titel, 
+  .benefits-title, 
+  .projects-title,
+  .faq-title,
+  .reviews-title {
+    color: #D24C53;
+  }
+
+  .faq-list-titel,
+  .reviews-list-text,
+  .faq-list-text,
+  .work-together-input:focus,
+  .work-together-input {
+    color: #1c1d20;
+  }
+
+  .icon-arrow,
+  .about-me-item-skils,
+  .benefits-button,
+  .projects_list-tools-item,
+  .faq-list-icon,
+  .reviews-list,
+  .icon-left-arrow,
+  .icon-right-arrow,
+  .work-together-contacts-item,
+  .projects-arrow-item-prev,
+  .projects-arrow-item-next {
+    border: 1px solid #F2D0D1;
+  }
+
+  .work-together-input {
+    border-bottom: 1px solid #D24C53;
+  }
+
+  .benefits-button:hover,
+  .hero-social-link:hover {
+    border: 1px solid #D24C53;
+  }
+}
+
 /* Styles for Tablet devices */
 @media screen and (min-width: 768px) {
   .section {
     padding-bottom: 48px;
     padding-top: 48px;;
   }
+
+
+  body.light-theme .hero-container{
+background-image: url('/img/hero/hero-tablet-light@1x.png');
 }
+}
+
 /* Styles for Desktop devices */
 @media screen and (min-width: 1440px) {
   .section {
    padding-bottom: 82px;
    padding-top: 82px;;
   }
+
+
+  body.light-theme .hero-container{
+background-image: url('/img/hero/hero-desktop-light@1x.png');
+}
 }

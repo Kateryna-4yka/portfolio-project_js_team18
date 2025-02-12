@@ -68,11 +68,13 @@
 
 .icon-arrow {
   border: 1px solid rgba(250, 250, 250, 0.2);
+  background: transparent;
   border-radius: 100px;
   padding: 9px;
   width: 36px;
   height: 36px;
   transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+  stroke: #fafafa;
 }
 
 .about-me-icon {

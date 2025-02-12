@@ -4,7 +4,6 @@ text-transform: uppercase;
 color: rgba(250, 250, 250, 0.4);
 margin-bottom: 32px;
 font-size: 16px;
-
 }
 
 .benefits-catalog{
@@ -59,6 +58,7 @@ transition: transform 800ms ease-in-out;
 font-weight: 600;
 font-size: 20px;
 margin-bottom: 8px;
+color: #fafafa;
 }
 
 .benefits-list-text {

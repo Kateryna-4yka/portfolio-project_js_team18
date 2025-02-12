@@ -81,3 +81,32 @@ headerMenuList.addEventListener('click', event => {
 headerOrderBtn.addEventListener('click', event => {
   moveToAnchor(event, false);
 });
+
+
+const themeToggleDark = document.getElementById('theme-toggle-dark');
+const themeToggleLight = document.getElementById('theme-toggle-light');
+const body = document.body;
+
+// Изначально страница должна быть в темной теме, без класса light-theme
+themeToggleLight.style.display = 'none';  // Скрыть кнопку для светлой темы, так как по умолчанию темная
+themeToggleDark.style.display = 'block'; // Показываем кнопку для темной темы
+
+// Переключаем тему на светлую
+themeToggleDark.addEventListener('click', () => {
+  body.classList.add('light-theme'); // Добавляем класс light-theme для светлой темы
+  themeToggleLight.style.display = 'block'; // Показываем кнопку для светлой темы
+  themeToggleDark.style.display = 'none';  // Скрываем кнопку для темной темы
+
+  // Сохраняем в localStorage, что тема светлая
+  localStorage.setItem('theme', 'light');
+});
+
+// Переключаем тему на темную
+themeToggleLight.addEventListener('click', () => {
+  body.classList.remove('light-theme'); // Убираем класс light-theme, возвращаем темную тему
+  themeToggleLight.style.display = 'none';  // Скрываем кнопку для светлой темы
+  themeToggleDark.style.display = 'block'; // Показываем кнопку для темной темы
+
+  // Сохраняем в localStorage, что тема темная
+  localStorage.setItem('theme', 'dark');
+});
