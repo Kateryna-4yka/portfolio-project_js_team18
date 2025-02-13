@@ -74,6 +74,9 @@
   .hero-container {
     background-image: url('/img/hero/hero-mobile@2x.png');
   }
+  body.light-theme .hero-container {
+    background-image: url('/img/hero/hero-mobile-light@2x.png');
+  }
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -127,6 +130,9 @@
   .hero-container {
     background-image: url('/img/hero/hero-tablet@2x.png');
   }
+    body.light-theme .hero-container {
+    background-image: url('/img/hero/hero-tablet-light@2x.png');
+  }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
@@ -143,5 +149,8 @@
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .hero-container {
     background-image: url('/img/hero/hero-desktop@2x.png');
+  }
+  body.light-theme .hero-container {
+    background-image: url('/img/hero/hero-desktop-light@2x.png');
   }
 }

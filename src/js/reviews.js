@@ -127,26 +127,28 @@ function observeCards() {
           if (cardId === '6') isCard6Visible = true;
         }
       });
-  
+
+      const isLightTheme = document.body.classList.contains('light-theme');
+      
       // Застосовуємо стилі до prevButton
       if (isCard1Visible) {
         prevButton.classList.add('disable');
-        prevButton.style.stroke = '#3B3B3B'; // Додаємо stroke для prevButton
-        prevButton.style.border = '1px solid rgba(250, 250, 250, 0.2)'; // Додаємо border для prevButton
+        prevButton.style.stroke = isLightTheme ? 'rgba(250,250,250, 0.2)' : '#3B3B3B'; // Змінюємо stroke для світлої/темної теми
+        prevButton.style.border = isLightTheme ? '1px solid #FAFAFA' : '1px solid rgba(250, 250, 250, 0.2)'; // Змінюємо border для світлої/темної теми
       } else {
         prevButton.classList.remove('disable');
-        prevButton.style.stroke = '#FAFAFA'; // Видаляємо stroke
+        prevButton.style.stroke = isLightTheme ? '#FAFAFA' : '#FAFAFA'; // Змінюємо stroke для світлої/темної теми
         prevButton.style.border = ''; // Видаляємо border
       }
   
       // Застосовуємо стилі до nextButton
       if (isCard6Visible) {
         nextButton.classList.add('disable');
-        nextButton.style.stroke = '#3B3B3B'; // Додаємо stroke для nextButton
-        nextButton.style.border = '1px solid rgba(250, 250, 250, 0.2)'; // Додаємо border для nextButton
+        nextButton.style.stroke = isLightTheme ? 'rgba(250,250,250, 0.2)' : '#3B3B3B'; // Змінюємо stroke для світлої/темної теми
+        nextButton.style.border = isLightTheme ? '1px solid #FAFAFA' : '1px solid rgba(250, 250, 250, 0.2)'; // Змінюємо border для світлої/темної теми
       } else {
         nextButton.classList.remove('disable');
-        nextButton.style.stroke = '#FAFAFA'; // Видаляємо stroke
+        nextButton.style.stroke = isLightTheme ? '#FAFAFA' : '#FAFAFA'; // Змінюємо stroke для світлої/темної теми
         nextButton.style.border = ''; // Видаляємо border
       }
   
@@ -158,4 +160,4 @@ function observeCards() {
   
     if (card1) observer.observe(card1);
     if (card6) observer.observe(card6);
-  }
+}
