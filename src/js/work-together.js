@@ -15,7 +15,6 @@ const closeModal = e => {
     
     window.removeEventListener('click', closeModal);
     window.removeEventListener('keydown', closeModalByEsc);
-    
   }
 };
 

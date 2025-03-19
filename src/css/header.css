@@ -28,7 +28,6 @@
   border: none;
   background-color: transparent;
 }
-
 .header-modal {
   width: 100vw;
   height: 100vh;
@@ -101,18 +100,11 @@
 .header-modal-order-btn:hover {
   background-color: #e0373f;
 }
-
-/* .theme-btn-dark {
-  display: none;
-} */
 .theme-btn-dark, .theme-btn-light {
-  position: absolute;
-  right: 80px;
-  top: 0px;
   background-color: transparent;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    padding: 6px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 6px;
 }
 .dark-mode {
     width: 24px;
@@ -124,7 +116,6 @@
     transition: background-color 3s ease-in-out 0s;
 }
 
-
 @media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .header-modal {
     background-image: url('/img/hero/hero-desktop@2x.png');
@@ -134,7 +125,12 @@
   }
 }
 
-/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  body.light-theme .header-modal {
+  background-image: none;
+}
+}
+
 @media only screen and (min-width: 768px) {
     .header-modal {
     background-image: none;
@@ -166,6 +162,13 @@
     align-items: center;
     gap: 5px;
   }
+  .header-div-btn-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap:25px; 
+  }
   .header-order-btn {
     width: 163px;
     height: 55px;
@@ -183,15 +186,6 @@
   }
   .burger-icon-btn {
     display: none;
-  }
-  .theme-btn-dark, .theme-btn-light {
-  right: 230px;
-  top: 10px;
-}
-}
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    body.light-theme .header-modal {
-    background-image: none;
   }
 }
 
